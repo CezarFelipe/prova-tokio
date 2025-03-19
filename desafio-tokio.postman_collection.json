@@ -1,0 +1,147 @@
+{
+	"info": {
+		"_postman_id": "1d73792f-a527-47f2-abfe-21066ab4b90d",
+		"name": "desafio-tokio",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "9570826",
+		"_collection_link": "https://warped-crescent-586261.postman.co/workspace/entrevista~36f027b1-fee0-4c3a-a912-a10490359e3d/collection/9570826-1d73792f-a527-47f2-abfe-21066ab4b90d?action=share&source=collection_link&creator=9570826"
+	},
+	"item": [
+		{
+			"name": "client",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":\"2\",\r\n    \"first_name\":\"Felipe\",\r\n    \"last_name\":\"Silva\",\r\n    \"email\":\"cezarfelipe2008@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/clients/"
+					},
+					"response": []
+				},
+				{
+					"name": "read",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/clients/1"
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8080/clients/1"
+					},
+					"response": []
+				},
+				{
+					"name": "read all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/clients/all"
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":\"1\",\r\n    \"first_name\":\"Cezar\",\r\n    \"last_name\":\"Silvaa\",\r\n    \"email\":\"cezarfelipe2008@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/clients/1"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "addresses",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":\"1\",\r\n    \"id_client\":\"2\",\r\n    \"address\":\"R. Artur Prado\",\r\n    \"number\":\"659\",\r\n    \"complement\":\"\",\r\n    \"postal_code\":\"01322-000\",\r\n    \"city\":\"Sao Paulo\",\r\n    \"state\":\"Sao Paulo\",\r\n    \"country\":\"Brasil\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/addresses/"
+					},
+					"response": []
+				},
+				{
+					"name": "read",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/addresses/1"
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8080/addresses/1"
+					},
+					"response": []
+				},
+				{
+					"name": "read all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/addresses/all"
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":\"1\",\r\n    \"first_name\":\"Cezar\",\r\n    \"last_name\":\"Silvaa\",\r\n    \"email\":\"cezarfelipe2008@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/addresses/1"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
